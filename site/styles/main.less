@@ -1,0 +1,58 @@
+/**
+ * Main Style Sheet
+ * GreenTopEnergy
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+
+ @font-face {
+ 	font-family: 'Open Sans Hebrew';
+ 	font-style: bold;
+ 	font-weight: 700;
+ 	src: url(../images/fonts/opensanshebrew-bold-webfont.woff) format('woff');
+ }
+
+  @font-face {
+ 	font-family: 'Open Sans Hebrew';
+ 	font-style: regular;
+ 	font-weight: 400;
+ 	src: url(../images/fonts/opensanshebrew-regular-webfont.woff) format('woff');
+ }
+
+@color_ac_blue: #405380;
+@color_ac_green: #01B1AE;
+@color_ac_orange: #F39C12;
+@color_ac_grey: #BDC3C7;
+@color_ac_text: white;
+@vertical_spacing: 50px;
+
+@import (css) "stock/header.css";
+@import (css) "stock/copyright.css";
+
+
+body {
+	background-color: white;
+	color: @color_text;
+	font-family: 'Open Sans Hebrew', sans-serif;
+	font-weight: 400;
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: 'Open Sans Hebrew', sans-serif;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: @color_ac_blue;
+	font-family: 'Open Sans Hebrew', sans-serif;
+	font-weight: 400;
+}

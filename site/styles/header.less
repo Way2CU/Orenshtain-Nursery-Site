@@ -1,0 +1,99 @@
+/**
+ * Header Style Sheet
+ * Orenshtain Nursery Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+	display: block;
+	text-align: center;
+	padding: @vertical_spacing calc((100vw - 1200px) / 2);
+
+	background-image: url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 1920px 900px;
+	min-height: 800px;
+	overflow: hidden;
+
+	color: @color_ac_text;
+
+}
+
+header img.logo {
+	width: 10%;
+}
+
+header h1 {
+	color: @color_ac_text;
+	font-size: 3em;
+
+}
+
+header strong {
+	display: block;
+	font-size: 1.5em;
+}
+
+header p {
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+header a.phone {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid black;
+	border-radius: @border_radius;
+	background-color: @color_ac_orange;
+	text-decoration: none;
+	color: @color_ac_text;
+	font-size: 2em;
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+header a.phone:hover {
+	background-color: darken(@color_ac_orange,5%);
+}
+
+header a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	width: 35px;
+	height: 35px;
+	fill: @color_ac_text;
+}
+
+header  figure {
+	display: block;
+	line-height: 100%;
+	position: relative;
+}
+
+header figure:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -1.5px;
+	height: 600px;
+	border: 1px dashed @color_ac_text;
+}
+
+header figure svg {
+
+	width: 50px;
+	height: 50px;
+	fill: @color_ac_text;
+	position: relative;
+}

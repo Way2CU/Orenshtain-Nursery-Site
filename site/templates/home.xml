@@ -41,6 +41,17 @@
 					</svg>
 				</figure>
 			</header>
+
+			<section id="about">
+				<h2><cms:text constant="title_about"/></h2>
+
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="about"
+					template="parts/article_about.xml"
+					/>
+			</section>
 		</body>
 	</html>
 </document>

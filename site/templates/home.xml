@@ -70,6 +70,17 @@
 
 				<p><cms:text constant="subtitle_features"/></p>
 			</section>
+
+			<section id="gallery">
+				<h2><cms:text constant="title_gallery"/></h2>
+
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="nursery_gallery"
+					template="parts/image.xml"
+					/>
+			</section>
 		</body>
 	</html>
 </document>

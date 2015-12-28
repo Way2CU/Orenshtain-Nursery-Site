@@ -1,0 +1,119 @@
+/**
+ * Header mobile Style Sheet
+ * Orenshatain nursery site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ header {
+ 	display: block;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ 	text-align: center;
+ 	overflow: hidden;
+	background-color: @color_ac_green;
+ 	color: @color_ac_text;
+ }
+
+ header img.logo {
+ 	width: 50%;
+ }
+
+ header h1 {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	color: @color_ac_text;
+ 	font-size: 1.5em;
+ 	width: 95%
+
+ }
+
+ header strong {
+ 	display: block;
+ 	font-size: 1.5em;
+ }
+
+ header p {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 80%;
+ }
+
+ section#contact a,
+ header a.phone {
+ 	display: inline-block;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ 	border: 1px solid black;
+ 	border-radius: @border_radius;
+ 	background-color: @color_ac_orange;
+ 	text-decoration: none;
+ 	color: @color_ac_text;
+ 	font-size: 1.5em;
+ 	font-weight: 700;
+ 	transition: all 0.3s;
+ }
+
+ section#contact a {
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ 	color: @color_ac_green;
+ 	background-color: fade(@color_ac_text,80%);
+ }
+
+ header a.phone:hover {
+ 	background-color: darken(@color_ac_orange,5%);
+ }
+
+ section#contact a:hover {
+ 	background-color: @color_ac_green;
+ 	color: @color_ac_text;
+ }
+
+ section#contact a:hover svg {
+ 	fill: @color_ac_text;
+ }
+
+ section#contact a svg,
+ header a.phone svg {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	padding-right: 5px;
+ 	padding-bottom: 5px;
+ 	width: 30px;
+ 	height: 30px;
+ 	fill: @color_ac_text;
+ 	transition: all 0.3s;
+ }
+
+ section#contact a svg {
+ 	padding-right: 0px;
+ 	padding-left: 5px;
+ 	fill: @color_ac_green;
+ }
+
+ header  figure {
+ 	display: block;
+ 	line-height: 100%;
+ 	position: relative;
+ }
+
+ header figure:before {
+ 	content: "";
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 50%;
+ 	margin-left: -1.5px;
+ 	height: 600px;
+ 	border: 1px dashed @color_ac_text;
+ }
+
+ header figure svg {
+ 	width: 30px;
+ 	height: 30px;
+ 	fill: @color_ac_text;
+ 	position: relative;
+ }

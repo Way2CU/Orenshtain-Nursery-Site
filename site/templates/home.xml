@@ -81,6 +81,48 @@
 					template="parts/image.xml"
 					/>
 			</section>
+
+			<section id="contact">
+				<h2><cms:text constant="title_contact"/></h2>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#phone"
+							xlink:href="site/images/site-sprite.svg#phone"
+							/>
+					</svg>
+					<cms:text constant="phone"/>
+				</a>
+
+				<a
+					href="'fax:'.urlencode(Language::getText('fax'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#fax"
+							xlink:href="site/images/site-sprite.svg#fax"
+							/>
+					</svg>
+					<cms:text constant="fax"/>
+				</a>
+
+				<div id="form_wrap">
+					<p><cms:text constant="title_form"/></p>
+					
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+				</div>
+			</section>
 		</body>
 	</html>
 </document>

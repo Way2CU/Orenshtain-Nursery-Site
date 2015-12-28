@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#contact,
 section#gallery,
 section#features,
 section#about {
@@ -13,6 +14,17 @@ section#about {
 	margin-top: -150px;
 	text-align: center;
 	padding: @vertical_spacing calc(~'(100% - 1200px) / 2');
+	position: relative;
+}
+
+section#contact {
+	margin-top: 0px;
+
+	background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 1920px 550px;
+	min-height: 450px; 
 	position: relative;
 }
 
@@ -35,12 +47,14 @@ section#about h2 strong {
 	font-size: 2em;
 }
 
+section#contact h2,
 section#gallery h2,
 section#features h2 {
 	color: @color_ac_text;
 	font-size: 3em;
 }
 
+section#contact h2,
 section#gallery h2 {
 	color: @color_ac_blue;
 }
@@ -173,4 +187,121 @@ section#features ul li svg {
 	padding: 15px;
 	fill: @color_ac_text;
 	transition: all 0.3s;
+}
+
+/*contact form*/
+
+/*contact form*/
+
+section#contact div#form_wrap {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: @color_ac_text;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section#contact div#form_wrap p {
+	padding-bottom: 20px;
+	font-size: 1.8em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+section#contact div#form_wrap form {
+	display: block;
+}
+
+
+section#contact div#form_wrap form label {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+
+section#contact div#form_wrap form label:before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	right: 0px;
+
+	background-image: url(../images/form-icons.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+
+section#contact div#form_wrap form label:first-of-type:before {
+	background-position: -100px 0px;
+}
+
+section#contact div#form_wrap form label:nth-of-type(2):before {
+	background-position: -50px 0px;
+}
+
+section#contact div#form_wrap form label  span {
+	display: block;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+section#contact div#form_wrap form label input {
+	display: block;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 40px;
+	border: none;
+	color: black;
+	background-color: fade(@color_ac_text,60%);
+	width: calc(~'(320px - 40px)');
+	transition: all 0.3s;
+}
+
+section#contact div#form_wrap form label:first-of-type input {
+	border-radius: 0px @border_radius @border_radius 0px;
+}
+
+
+section#contact div#form_wrap form label input:hover {
+	background-color: fade(@color_ac_text,70%);
+}
+
+section#contact div#form_wrap form label input:focus {
+	background-color: fade(@color_ac_text,80%);
+}
+
+
+
+section#contact div#form_wrap form div.controls {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+section#contact div#form_wrap form div.controls button {
+	display: block;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: none;
+	color: @color_ac_text;
+	background-color: fade(@color_ac_green,60%);
+	border-radius: @border_radius 0px 0px @border_radius;
+	width: 150px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+section#contact div#form_wrap form div.controls button:hover {
+	background-color: fade(@color_ac_green,80%);
 }

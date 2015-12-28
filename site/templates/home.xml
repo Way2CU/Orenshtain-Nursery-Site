@@ -26,8 +26,8 @@
 					<cms:text constant="phone"/>
 					<svg>
 						<use
-							href="#icon-phone"
-							xlink:href="site/images/site-sprite.svg#icon-phone"
+							href="#phone"
+							xlink:href="site/images/site-sprite.svg#phone"
 							/>
 					</svg>
 				</a>
@@ -35,8 +35,8 @@
 				<figure>					
 					<svg>
 						<use
-							href="#icon-mouse"
-							xlink:href="site/images/site-sprite.svg#icon-mouse"
+							href="#mouse"
+							xlink:href="site/images/site-sprite.svg#mouse"
 							/>
 					</svg>
 				</figure>
@@ -51,6 +51,24 @@
 					group="about"
 					template="parts/article_about.xml"
 					/>
+			</section>
+
+			<section id="features">
+				<h2><cms:text constant="title_features"/></h2>
+
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site/images/site-sprite.svg"/>
+					</cms:module>
+				</ul>
+
+				<p><cms:text constant="subtitle_features"/></p>
 			</section>
 		</body>
 	</html>

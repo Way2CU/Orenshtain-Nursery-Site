@@ -13,11 +13,8 @@
 
 			<header>
 				<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" class="logo" cms:eval="src"/>
-
 				<h1><cms:text constant="title_header"/></h1>
-
 				<p><cms:text constant="subtitle_header"/></p>
-
 				<a
 					href="'tel:'.urlencode(Language::getText('phone'))"
 					cms:eval="href"
@@ -31,8 +28,7 @@
 							/>
 					</svg>
 				</a>
-
-				<figure>					
+				<figure>
 					<svg>
 						<use
 							href="#mouse"
@@ -44,7 +40,6 @@
 
 			<section id="about">
 				<h2><cms:text constant="title_about"/></h2>
-
 				<cms:module
 					name="articles"
 					action="show_list"
@@ -55,7 +50,6 @@
 
 			<section id="features">
 				<h2><cms:text constant="title_features"/></h2>
-
 				<ul>
 					<cms:module
 						name="articles"
@@ -67,13 +61,11 @@
 						<param name="sprite" value="site/images/site-sprite.svg"/>
 					</cms:module>
 				</ul>
-
 				<p><cms:text constant="subtitle_features"/></p>
 			</section>
 
 			<section id="gallery">
 				<h2><cms:text constant="title_gallery"/></h2>
-
 				<cms:module
 					name="gallery"
 					action="show_image_list"
@@ -84,7 +76,6 @@
 
 			<section id="contact">
 				<h2><cms:text constant="title_contact"/></h2>
-
 				<a
 					href="'tel:'.urlencode(Language::getText('phone'))"
 					cms:eval="href"
@@ -98,7 +89,6 @@
 					</svg>
 					<cms:text constant="phone"/>
 				</a>
-
 				<a
 					href="'fax:'.urlencode(Language::getText('fax'))"
 					cms:eval="href"
@@ -115,7 +105,6 @@
 
 				<div id="form_wrap">
 					<p><cms:text constant="title_form"/></p>
-
 					<cms:module
 						name="contact_form"
 						action="show"

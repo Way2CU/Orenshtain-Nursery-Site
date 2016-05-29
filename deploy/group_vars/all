@@ -2,7 +2,7 @@
 site:
   domain: lp.zo-gardner.co.il
   # subdomain: test
-  make_alias: false
+  # alias: domain.com
   root: httpdocs
   username: orenshtain
   caracal_branch: develop

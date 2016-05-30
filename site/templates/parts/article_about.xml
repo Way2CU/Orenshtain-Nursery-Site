@@ -2,14 +2,5 @@
 	<article >
 		<h4><cms:var param="title" multilanguage="yes"/></h4>
 		<cms:markdown param="content" multilanguage="yes"/>
-		<div>
-			<cms:module
-				name="articles"
-				action="show"
-				text_id="$params['text_id'].'_info'"
-				template="parts/article_info.xml"
-				cms:eval="text_id"
-				/>
-		</div>
 	</article>
 </document>

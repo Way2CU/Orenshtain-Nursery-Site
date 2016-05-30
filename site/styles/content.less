@@ -122,22 +122,24 @@ section#about article p img {
 	margin-right: auto;
 }
 
-section#about article > p  strong {
+section#about article > p strong {
 	min-height: 250px;
 	color: @color_ac_green;
 }
 
-section#about article div  {
-	text-align: right;
-	padding-left: 10px;
-	padding-right: 10px;
+section#about article ul {
+	display: block;
+	margin: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border: 1px solid @color_ac_grey;
-	min-height: 300px;
 }
 
-section#about article > div p {
-	text-align: right;
-	box-shadow: 0px 0px 4px fade(@color_ac_grey,30%);
+section#about article ul li:first-of-type {
+	padding: 0px;
+	list-style-type: none;
 }
 
 /*features*/

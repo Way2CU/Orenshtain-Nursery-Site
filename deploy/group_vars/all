@@ -1,12 +1,12 @@
 ---
 site:
-  domain: lp.zo-gardner.co.il
+  domain: plantz.co.il
   # subdomain: test
   # alias: domain.com
   root: httpdocs
   username: orenshtain
   caracal_branch: develop
-  ip_address: 216.250.115.199
+  # ip_address: 216.250.115.199
   # owner: Some Person
   # plan: Unlimited
   # database_type: 'mysql'

@@ -6,34 +6,34 @@
  * Authors:Tal Reznic
  */
 
- section#contact,
- section#gallery,
- section#features,
- section#about {
- 	display: block;
- 	padding-top: 20px;
- 	padding-bottom: 20px;
- 	text-align: center;
- 	position: relative;
- }
+section#contact,
+section#gallery,
+section#features,
+section#about {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+}
 
- section#features {
- 	background-color: @color_ac_green;
- }
+section#features {
+	background-color: @color_ac_green;
+}
 
-  section#contact {
-  	background-color: @color_ac_grey;
-  }
+section#contact {
+	background-color: @color_ac_grey;
+}
 
- section#features h2,
- section#about h2 strong {
- 	display: block;
- 	margin-left: auto;
- 	margin-right: auto;
- 	font-weight: 400;
- 	font-size: 1.2em;
- 	width: 95%;
- }
+section#features h2,
+section#about h2 strong {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 400;
+	font-size: 1.2em;
+	width: 95%;
+}
 
 section#contact h2,
 section#gallery h2,
@@ -91,21 +91,19 @@ section#about article p img {
 	margin-right: auto;
 }
 
-section#about article > p  strong {
+section#about article > p strong {
 	color: @color_ac_green;
 }
 
-section#about article div  {
-	text-align: right;
-	padding-right: 10px;
+section#about article ul {
+	display: block;
+	margin: 0px;
 	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border: 1px solid @color_ac_grey;
 	width: calc(~'(100% - 20px)');
-}
-
-section#about article > div p {
-	text-align: right;
-	box-shadow: 0px 0px 4px fade(@color_ac_grey,30%);
 }
 
 /*features*/

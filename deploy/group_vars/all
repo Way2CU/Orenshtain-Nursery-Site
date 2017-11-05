@@ -5,7 +5,7 @@ site:
   # alias: domain.com
   root: httpdocs
   username: orenshtain
-  caracal_branch: develop
+  caracal_branch: v0.2.x
   # ip_address: 216.250.115.199
   # owner: Some Person
   # plan: Unlimited

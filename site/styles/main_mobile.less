@@ -29,13 +29,16 @@
 @vertical_spacing: 50px;
 @border_radius: 40px;
 
+@import (reference) 'common.less';
+@import (reference) 'stock/functions.less';
+@import 'fonts.less';
+
 @import "header_mobile.less";
 @import "content_mobile.less";
 @import "footer_mobile.less";
 
 @import (css) "stock/header.css";
-@import (css) "stock/copyright.css";
-
+@import (css) 'stock/copyright_mobile.css';
 
 body {
 	background-color: white;
@@ -60,4 +63,13 @@ h5 {
 	color: @color_ac_blue;
 	font-family: 'Open Sans Hebrew', sans-serif;
 	font-weight: 400;
+	margin: 0;
+	margin-bottom: @header_spacing;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	margin-bottom: @paragraph_spacing;
+	padding: 0;
 }

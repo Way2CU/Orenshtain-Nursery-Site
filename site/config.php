@@ -21,10 +21,9 @@ $available_languages = array('he');
 $default_language = 'he';
 
 // default session options
-$session_type = Session::TYPE_BROWSER;
+$session_type = SessionType::BROWSER;
 
 // database
-$db_use = true;
 $db_type = DatabaseType::MYSQL;
 $db_config = array(
 		'host' => 'localhost',
@@ -36,6 +35,7 @@ $db_config = array(
 // configure code generation
 $cache_method = CacheType::NONE;
 $optimize_code = false;
+$include_styles = true;
 $url_rewrite = true;
 
 ?>

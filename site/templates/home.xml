@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:var name="_DOCTYPE"/>
-	<html lang="$language" cms:eval="lang">
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<cms:svg file="site-sprite.svg"/>
+		<body>
 
 			<header>
 				<img
@@ -21,25 +19,15 @@
 				<h1><cms:text constant="title_header"/></h1>
 				<p><cms:text constant="subtitle_header"/></p>
 				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
+					href="'tel:'.urlencode(Language::get_text('phone'))"
 					cms:eval="href"
 					class="phone"
 					>
 					<cms:text constant="phone"/>
-					<svg>
-						<use
-							href="#phone"
-							xlink:href="site/images/site-sprite.svg#phone"
-							/>
-					</svg>
+					<cms:svg file="site-sprite.svg" symbol="phone"/>
 				</a>
 				<figure>
-					<svg>
-						<use
-							href="#mouse"
-							xlink:href="site/images/site-sprite.svg#mouse"
-							/>
-					</svg>
+					<cms:svg file="site-sprite.svg" symbol="mouse"/>
 				</figure>
 			</header>
 
@@ -82,29 +70,19 @@
 			<section id="contact">
 				<h2><cms:text constant="title_contact"/></h2>
 				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
+					href="'tel:'.urlencode(Language::get_text('phone'))"
 					cms:eval="href"
 					class="phone"
 					>
-					<svg>
-						<use
-							href="#phone"
-							xlink:href="site/images/site-sprite.svg#phone"
-							/>
-					</svg>
+					<cms:svg file="site-sprite.svg" symbol="phone"/>
 					<cms:text constant="phone"/>
 				</a>
 				<a
-					href="'fax:'.urlencode(Language::getText('fax'))"
+					href="'fax:'.urlencode(Language::get_text('fax'))"
 					cms:eval="href"
 					class="phone"
 					>
-					<svg>
-						<use
-							href="#fax"
-							xlink:href="site/images/site-sprite.svg#fax"
-							/>
-					</svg>
+					<cms:svg file="site-sprite.svg" symbol="fax"/>
 					<cms:text constant="fax"/>
 				</a>
 

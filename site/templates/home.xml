@@ -12,10 +12,10 @@
 			<cms:svg file="site-sprite.svg"/>
 
 			<header>
-				<img 
-					src="_BASEURL.'/site/images/logo.svg'" 
-					alt="logo" 
-					class="logo" 
+				<img
+					src="_BASEURL.'/site/images/logo.png'"
+					alt="logo"
+					class="logo"
 					cms:eval="src"
 					/>
 				<h1><cms:text constant="title_header"/></h1>
